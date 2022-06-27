@@ -13,12 +13,15 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>API Gateway Server</name>
     <description>API Gateway Server</description>
+
     <properties>
         <java.version>11</java.version>
         <spring-cloud.version>2021.0.3</spring-cloud.version>
         <docker.image.prefix>ostock</docker.image.prefix>
     </properties>
+
     <dependencies>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -66,7 +69,21 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bootstrap</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20220320</version>
+        </dependency>
+
+
     </dependencies>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
